@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Machine from "./Machine";
+import VendingMachine from "./VendingMachine";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1> try your luck </h1>
+        <Machine spin1="🍒" spin2="🍓" spin3="🍎"/>
+        <Machine spin1="🍎" spin2="🍎" spin3="🍎"/>
+        <VendingMachine/>
     </div>
   );
 }
